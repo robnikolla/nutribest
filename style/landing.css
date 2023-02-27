@@ -1,0 +1,29 @@
+body{
+    font-family:'Roboto',sans-serif;
+}
+.nav-link{
+    font-size:1.1rem;
+    margin-right:20px;
+}
+.hero-div{
+    background-image:url("../hero.png");
+    background-size:cover;
+    min-height:85vh;
+    padding:3rem;
+}
+.about-div{
+    /* background-image:url("../premium_photo-1673187699896-f4e82e99cca0.avif"); */
+    /* background-size:cover; */
+    background-color: #f3f3f3;
+}
+.hero-card{
+    padding:3rem 2rem;
+    width:40rem;
+}
+.hero-card h1{
+    font-weight:800;
+    color:#f9a022;
+}
+.newsletter-btn{
+    background-color:#fbc847;
+}
