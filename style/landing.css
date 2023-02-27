@@ -6,8 +6,10 @@ body{
     margin-right:20px;
 }
 .hero-div{
-    background-image:url("../hero.png");
-    background-size:cover;
+    background-image:url("../hero3.jpg");
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size:contain;
     min-height:85vh;
     padding:3rem;
 }
