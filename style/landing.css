@@ -1,31 +1,70 @@
 body{
     font-family:'Roboto',sans-serif;
 }
+nav{
+    background-color:#f4f1de;
+}
 .nav-link{
     font-size:1.1rem;
     margin-right:20px;
 }
 .hero-div{
-    background-image:url("../hero3.jpg");
+    background-image:url("../img/10175.png");
     background-repeat:no-repeat;
     background-position: right;
-    background-size:contain;
-    min-height:85vh;
+    background-position:cover;
+    background-size:60%;
+    min-height:70vh;
     padding:3rem;
 }
-.about-div{
-    /* background-image:url("../premium_photo-1673187699896-f4e82e99cca0.avif"); */
-    /* background-size:cover; */
-    background-color: #f3f3f3;
+.off20{
+    position:absolute;
+    font-size:1rem;
+    text-align: center;
+    width:100%;
+    padding:2px 0px;
+    background-color: rgb(160, 27, 27);
+    color:white;
+}
+.bestsellersdiv{
+   
+    background-color: #f2f2f2;
 }
 .hero-card{
     padding:3rem 2rem;
     width:40rem;
+    background-color:#263c6f;
+    border-radius:15px;
 }
 .hero-card h1{
     font-weight:800;
-    color:#f9a022;
+    color:white;
+}
+.shopnowbtn{
+    font-size:1rem;
+    padding:0.3rem 0.6rem; 
+    background-color: #263c6f;
+    border:1px solid #faddbf;
+
+    color:#faddbf;
+    border-radius:5px;
 }
 .newsletter-btn{
     background-color:#fbc847;
 }
+
+.text-muted{
+    text-decoration: none;
+}
+.contactbtn2 {
+    padding: 10px 23px;
+    border: 1px solid #fac29a;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fac29a;
+    transition: 0.2s ease-in;
+    margin-bottom: 10vh;
+  }
+  .contactbtn2:hover {
+    background-color: rgb(250, 194, 154, 0.2);
+  }
