@@ -127,4 +127,20 @@ function validateShippingInfo(event) {
     }else{
         errterms.innerHTML ='';
     }
+
+
+    if(valid == true){
+        sessionStorage.clear()
+        sessionStorage.setItem('fname',fname)
+        sessionStorage.setItem('lname',lname)
+        sessionStorage.setItem('address',address)
+        sessionStorage.setItem('address2',address2)
+        sessionStorage.setItem('city',city)
+        sessionStorage.setItem('state',state)
+        sessionStorage.setItem('zip',zip)
+        sessionStorage.setItem('email',email)
+        sessionStorage.setItem('phone',phone)
+
+        window.location.href = "./checkout.php"
+    }
 }
