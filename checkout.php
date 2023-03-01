@@ -193,8 +193,12 @@
         },
         cache:true,
         success: function(data) {
-        alert(data);
-        window.location.href = './complete.html';
+          alert(data);
+
+          let jsondata = JSON.parse(data);
+          if(jsondata.success == 1){
+            window.location.href = "./complete.html"
+          }
         },
         async:true,
         error: function(xhr, status, error) {
