@@ -36,7 +36,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./products.html">Products</a>
+                <a class="nav-link" href="./products.html">Products</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -47,7 +47,7 @@
             <ul class="navbar-nav  mb-1 mb-lg-0">
              
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" data-bs-toggle="dropdown" aria-expanded="false"> 
+                <a class="nav-link active dropdown-toggle d-flex align-items-center" href="#" data-bs-toggle="dropdown" aria-expanded="false"> 
                   <span class="material-symbols-outlined mr-2">
                   shopping_cart
                   </span>
