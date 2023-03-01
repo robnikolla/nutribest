@@ -28,3 +28,9 @@ After clicking the submit button the input values together with the values store
 ![checkout](/screenshots/checkout.png?raw=true "Shipping Details")
 ![jsondata](/screenshots/json.png?raw=true "JSON Data")
 ![phpmyadmin](/screenshots/phpmyadmin.png?raw=true "JSON Data")
+
+## Order Confirmation Page
+
+This is the last page the user visits when ordering.
+The customers name is retrieved from a sessionStorage variable.
+![thankypu](/screenshots/thankyou.png?raw=true "Thank You")
