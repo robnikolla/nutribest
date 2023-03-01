@@ -7,6 +7,22 @@ The homepage is the first page a user sees when they visit Nutribest. It is desi
 The products page is where users can view and purchase the supplements available on Nutribest.Each product has a description and an image, along with its price and a button to add it to the user's cart.
 
 ## Homepage
-[Homepage screenshot] https://raw.githubusercontent.com/robnikolla/nutribest/main/screenshots/homepage.png?token=GHSAT0AAAAAAB7NXJ4WGWQ4PW4NCLG4JJCMY77QF5A
+![Homepage screenshot](/screenshots/homepage.png?raw=true "Homepage")
+
+## Products
+![Products screenshot](/screenshots/products.png?raw=true "Products")
+
+## Shipping Details Form
+All inputs have individual error messages that are checked everytime the submit button is clicked.
+E-mail and Phone number inputs are validated using RegEx formats.
+If there are no errors, all the input values are stored into sessionStorage and the checkout form will open.
+![Shipping Form](/screenshots/shippingdetails.png?raw=true "Shipping Details")
+
+## Checkout Form
+In this page the Expiration Date and CVV input are validated using html attributes, the Card Number input is validated using php.
+After clicking the submit button the input values together with the values stored in sessionStorage from shipping details form will be sent to an external PHP script which will validate checkout inputs and return the input values in json format as requested. It will also initialize a connection with the SQL database using PDO and upload the data to a table which will store them. 
+![checkout](/screenshots/checkout.png?raw=true "Shipping Details")
+![jsondata](/screenshots/json.png?raw=true "JSON Data")
+![phpmyadmin](/screenshots/phpmyadmin.png?raw=true "JSON Data")
 
 
