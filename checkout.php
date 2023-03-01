@@ -70,9 +70,9 @@
           </div>
       </nav>
     
-     <div class="row my-5">
+     <div class="row flex-inline flex-wrap" style="padding-bottom:3rem;background-image:url('./img/pattern.png');background-size:30rem">
         <!-- Shipping Form-->
-     <div class="col-md-6 container-sm pt-3" style="background-color:#f8f6f5" >
+     <div class="col-md-6 container-sm "style="padding:3rem 5rem;margin-top:2rem;backdrop-filter: blur(50px);border-radius:15px;background-color:#e1e9f0; ">
             <h3 class="mb-3" style="font-weight:600">Checkout</h3>
             <p style="color:#5c5c5c">Please provide your payment information.</p>
             <form class="row g-3" name="checkoutform" method="POST">
@@ -98,7 +98,7 @@
                 </div>
                 <br><br>
                 <div class="col-12">
-                   <button id="submitform" class="btn btn-primary" style="background-color:#012169;border:none;font-size:1.2rem;width:100%">  Confirm Order</button></div> 
+                   <button id="submitform" class="btn addtocart" style="font-size:1.2rem;width:100%">  Confirm Order</button></div> 
                   </div>
               </form>
       </div>
@@ -162,17 +162,20 @@
         $(document).ready(function() {
         
         $("#submitform").click(function(event) {
-          event.preventDefault();
+        // Prevents default submit
+        event.preventDefault();
         let cardfirstname = $("#inpCardName").val();
         let cardlastname = $("#inpCardSurname").val();
         let cardnum = $("#inpCardNumber").val();
         let cardexp = $("#inpCardExp").val();
         let cardcvv = $("#inpCVV").val();
         
+        // Ajax initialization
         $.ajax({
         type: "POST",
         url: "./validate.php",
         data: {
+          // POST Variables sent to PHP
             firstname:sessionStorage.getItem('fname'),
             lastname:sessionStorage.getItem('lname'),
             address:sessionStorage.getItem('address'),
@@ -191,7 +194,7 @@
         cache:true,
         success: function(data) {
         alert(data);
-        window.location.href = './thankyou.html';
+        window.location.href = './complete.html';
         },
         async:true,
         error: function(xhr, status, error) {

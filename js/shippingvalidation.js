@@ -128,8 +128,9 @@ function validateShippingInfo(event) {
         errterms.innerHTML ='';
     }
 
-
+    // If no input triggered valid to be false
     if(valid == true){
+        // Clears previous sessionStorage variables
         sessionStorage.clear()
         sessionStorage.setItem('fname',fname)
         sessionStorage.setItem('lname',lname)
@@ -140,7 +141,7 @@ function validateShippingInfo(event) {
         sessionStorage.setItem('zip',zip)
         sessionStorage.setItem('email',email)
         sessionStorage.setItem('phone',phone)
-
+        // Redirect
         window.location.href = "./checkout.php"
     }
 }

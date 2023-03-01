@@ -68,105 +68,15 @@
           
       </nav>
 
-      <div class="hero-div container-fluid  d-flex  align-items-center bg-body-tertiary ">
-        <div class="hero-card rounded ">
-            <h1 id="trans1">BOOST YOUR <span id="trans2"style="color:#fac29a">IMMNUNITY</span> </h1>
-            <p style="color:#d7d7d7" id="trans3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem quaerat vitae blanditiis sequi neque omnis impedit, veniam earum adipisci laudantium amet libero. Perferendis hic optio nihil sapiente accusamus animi.</p>
-            <hr style="color:white">
-           <div class="flex-d text-end">
-                
-            <a id="trans3" href="./products.html" class="contactbtn2"> SHOP NOW</a>
-            </div>
-    </div>
-      </div>
-    <div class="bestsellersdiv container-fluid mb-5">
-        <h1 class="text-center p-4">Our Best Sellers</h1>
-   
-        <div class="row">
-             <!-- Product Card -->
-        <div class="col prodcard m-3  d-flex justify-content-center rounded">
-          <div class="card" style="width: 17rem;height:auto ;margin:0">
-              <img src="./bottles/pbottle1.jpg" class="card-img-top" alt="...">
-              <p class="off20">20% OFF</p>
-              <div class="card-body">
-                <code >Nutribest</code>
-                  <h5 class="sd-5 fw-bold text-">Vitamin A</h5>
-                <p style="color:#5c5c5c" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                <div class="d-flex justify-content-between" > 
-                  <div>
-                  <p class="fw-bold fs-6 " style="color:#012169;margin-bottom:-8px" >$19.99</p>
-                  <code style="color:#5c5c5c">FREE shipping</code>
-                  </div>
-                  
-                 <button class="btn addtocart" >  Add to cart</button></div> 
-              </div>
-            </div>
-      </div>
-            <!-- Product Card -->
-        <div class="col prodcard m-3  d-flex justify-content-center rounded">
-          <div class="card" style="width: 17rem;height:auto ;margin:0">
-              <img src="./bottles/pbottle1.jpg" class="card-img-top" alt="...">
-              <p class="off20">20% OFF</p>
-              <div class="card-body">
-                <code >Nutribest</code>
-                
-                  <h5 class="sd-5 fw-bold text-">Vitamin B</h5>
-                <p style="color:#5c5c5c" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                <div class="d-flex justify-content-between" > 
-                  <div>
-                  <p class="fw-bold fs-6 " style="color:#012169;margin-bottom:-8px" >$19.99</p>
-                  <code style="color:#5c5c5c">FREE shipping</code>
-                  </div>
-                  
-                 <button class="btn addtocart">  Add to cart</button></div> 
-              </div>
-            </div>
-      </div>
-            <!-- Product Card -->
-        <div class="col prodcard m-3  d-flex justify-content-center rounded">
-          <div class="card" style="width: 17rem;height:auto ;margin:0">
-              <img src="./bottles/obottle1.jpg" class="card-img-top" alt="...">
-              <p class="off20">20% OFF</p>
-              <div class="card-body">
-                <code >Nutribest</code>
-                  <h5 class="sd-5 fw-bold text-">Vitamin C</h5>
-                <p style="color:#5c5c5c" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                <div class="d-flex justify-content-between" > 
-                  <div>
-                  <p class="fw-bold fs-6 " style="color:#012169;margin-bottom:-8px" >$19.99</p>
-                  <code style="color:#5c5c5c">FREE shipping</code>
-                  </div>
-                  
-                 <button class="btn addtocart">  Add to cart</button></div> 
-              </div>
-            </div>
-      </div>
-             <!-- Product Card -->
-        <div class="col prodcard m-3  d-flex justify-content-center rounded">
-          <div class="card" style="width: 17rem;height:auto ;margin:0">
-              <img src="./bottles/obottle2.jpg" class="card-img-top" alt="...">
-              <p class="off20">20% OFF</p>
-              <div class="card-body">
-                <code >Nutribest</code>
-                  <h5 class="sd-5 fw-bold text-">Vitamin D</h5>
-                <p style="color:#5c5c5c" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  
-                <div class="d-flex justify-content-between" > 
-                  <div>
-                  <p class="fw-bold fs-6 " style="color:#012169;margin-bottom:-8px" >$19.99</p>
-                  <code style="color:#5c5c5c">FREE shipping</code>
-                  </div>
-                  
-                 <button class="btn addtocart">  Add to cart</button></div> 
-              </div>
-            </div>
-      </div>
+
+      <div class="container-fluid " style="min-height:70vh">
+
+        <div>
+          <h1 id="thankyoumessage"></h1>
         </div>
 
-    </div>
+
+      </div>
   
     <footer class="container py-5">
     <div class="row">
@@ -219,5 +129,8 @@
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+      thankyou = document.querySelector("#thankyoumessage").innerHTML = "Thank you, " +sessionStorage.getItem('fname')
+    </script>d
 </body>
 </html>
