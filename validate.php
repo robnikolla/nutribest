@@ -25,7 +25,6 @@
         echo"Fill out the fields!";
         return false;
     }
-    // CVV and Expiration are already checked for regex match in the html input
     else if(preg_match($cardnumformat,$data['cardnum']) == 0) {
         echo "Card Number is not valid!";
         return false;
@@ -39,9 +38,10 @@
     }
     else {
         //Database Insertion
-        $sql = "INSERT INTO `customers`(`name`, `surname`, `address`, `address2`, `city`, `zip`, `email`, `phone`, `cardfirstname`, `cardlastname`, `cardnum`, `cardexp`, `cardcvv`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        $pwd = bin2hex(openssl_random_pseudo_bytes(4));
+        $sql = "INSERT INTO `customers`(`name`, `surname`, `address`, `address2`, `city`, `zip`, `email`, `phone`, `cardfirstname`, `cardlastname`, `cardnum`, `cardexp`, `cardcvv`,`password`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         $stm = $databaseconn->connDB()->prepare($sql);
-        $stm->execute([$data['firstname'],$data['lastname'],$data['address'],$data['address2'],$data['city'],$data['zip'],$data['email'],$data['phone'],$data['cardfirstname'],$data['cardlastname'],$data['cardnum'],$data['cardexp'],$data['cardcvv']]);
+        $stm->execute([$data['firstname'],$data['lastname'],$data['address'],$data['address2'],$data['city'],$data['zip'],$data['email'],$data['phone'],$data['cardfirstname'],$data['cardlastname'],$data['cardnum'],$data['cardexp'],$data['cardcvv'],$pwd]);
         //Return of Data in json format 
         $data["success"] = "1";
         echo (json_encode($data));

@@ -1,0 +1,51 @@
+.ordertbl{
+    border-collapse: collapse;
+    border-radius: 50%;
+    margin:10px;
+}
+.ordertbl th{
+    color: var(--zblue);
+    background-color:#c0cedf;
+    font-weight: normal;
+    font-weight:600;
+}
+.ordertbl td{
+    color:black;
+}
+.ordertbl tr{
+    background-color:white;
+}
+.ordertbl th,td{
+    padding:1rem 1.5rem;
+    /* border:1px solid var(--blue2);  */
+}
+.ordertbl tr:nth-child(odd){
+    background-color:#f3f8fe;
+}
+.updatebtn {
+    font-size: 0.8rem;
+    align-items: center;
+    height: 38px;
+    border-radius: 0.4rem;
+    cursor:pointer;
+    font-weight: 600;
+    padding: 0 1.2rem;
+    color: white;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;
+    background: var(--zblue);
+   }
+
+.deletebtn {
+    font-size: 0.8rem;
+    align-items: center;
+    height: 38px;
+    border-radius: 0.4rem;
+    font-weight: 600;
+    cursor:pointer;
+    padding: 0 1.2rem;
+    color: white;
+    border: none;
+    box-shadow: 0 .5rem 1rem rgba(143, 142, 142, 0.15)!important;
+    background: var(--zorange);
+   }

@@ -1,0 +1,10 @@
+.userinfocard{
+    padding:2rem 5rem;
+    margin-top:2rem;
+    backdrop-filter: blur(50px);
+    border-radius:15px;
+    background-color:#e1e9f0;
+}
+.userinfocard>div>p{
+    font-size:1.1rem;
+}
